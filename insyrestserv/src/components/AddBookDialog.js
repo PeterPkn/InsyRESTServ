@@ -7,9 +7,23 @@ import DialogContent from '@mui/material/DialogContent';
 import DialogContentText from '@mui/material/DialogContentText';
 import DialogTitle from '@mui/material/DialogTitle';
 
-export default function AddBookDialog(){
+export default function AddBookDialog({...props}){
+    console.log(props.postNewBook);
+    const postNewBook = props.postNewBook;
+    const getAllBookData = props.getData;
 
     const [open, setOpen] = React.useState(false);
+    const [newBookData, setNewBookData] = React.useState({
+      autor: [ [""] ],
+      buchtitel: [ '' ],
+      verlag: [ '' ],
+      isbn: [ '' ],
+      jahr: [ '' ],
+      ort: [ '' ],
+      hersteller: [ "" ],
+      auflage: [ '' ],
+      lieferung: [ [""] ]
+    });
 
     const handleClickOpen = () => {
         setOpen(true);
@@ -17,6 +31,13 @@ export default function AddBookDialog(){
 
     const handleClose = () => {
         setOpen(false);
+    };
+
+    const addBook = async () => {
+        console.log(newBookData);
+        await postNewBook(newBookData);
+        handleClose();
+        getAllBookData();
     };
 
           /* BUCH:
@@ -43,6 +64,7 @@ export default function AddBookDialog(){
             Buchinformationen Angeben
           </DialogContentText>
           <TextField
+          onChange={e=>setNewBookData({...newBookData,autor:[{vorname:[e.target.value.split(' ')[0]], nachname:[e.target.value.split(' ').slice(1).join(' ')]}]})}
             autoFocus
             margin="dense"
             id="autor"
@@ -51,6 +73,7 @@ export default function AddBookDialog(){
             type={'text'}
           />
          <TextField
+            onChange={e=>setNewBookData({...newBookData,buchtitel:[e.target.value]})}
             autoFocus
             margin="dense"
             id="Buchtitel"
@@ -59,6 +82,7 @@ export default function AddBookDialog(){
             type={'text'}
           />
          <TextField
+            onChange={e=>setNewBookData({...newBookData,verlag:[e.target.value]})}
             autoFocus
             margin="dense"
             id="verlag"
@@ -66,6 +90,7 @@ export default function AddBookDialog(){
             variant="standard"
           />
          <TextField
+            onChange={e=>setNewBookData({...newBookData, isbn:[e.target.value]})}
             autoFocus
             margin="dense"
             id="isbn"
@@ -74,6 +99,7 @@ export default function AddBookDialog(){
             type={'number'}
           />
           <TextField
+            onChange={e=>setNewBookData({...newBookData, jahr:[e.target.value]})}
             autoFocus
             margin="dense"
             id="Jahr"
@@ -82,6 +108,7 @@ export default function AddBookDialog(){
             type={'number'}
           />
           <TextField
+            onChange={e=>setNewBookData({...newBookData, ort:[e.target.value]})}
             autoFocus
             margin="dense"
             id="ort"
@@ -89,6 +116,7 @@ export default function AddBookDialog(){
             variant="standard"
           />
           <TextField
+            onChange={e=>setNewBookData({...newBookData, hersteller:[e.target.value]})}
             autoFocus
             margin="dense"
             id="hersteller"
@@ -96,6 +124,7 @@ export default function AddBookDialog(){
             variant="standard"
           />
           <TextField
+            onChange={e=>setNewBookData({...newBookData, auflage:[e.target.value]})}
             autoFocus
             margin="dense"
             id="auflage"
@@ -104,6 +133,7 @@ export default function AddBookDialog(){
             type={'number'}
           />
           <TextField
+            onChange={e=>setNewBookData({...newBookData, lieferung:[{"$":{status:e.target.value}}]})}
             autoFocus
             margin="dense"
             id="lieferung"
@@ -113,7 +143,7 @@ export default function AddBookDialog(){
         </DialogContent>
         <DialogActions>
           <Button onClick={handleClose}>Cancel</Button>
-          <Button onClick={handleClose}>Subscribe</Button>
+          <Button onClick={addBook}>Hinzufügen</Button>
         </DialogActions>
       </Dialog>
     </div>

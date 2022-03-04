@@ -1,477 +1,531 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
-<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by roman (HTL 3R) -->
-<?xml-stylesheet type="text/xsl" href="plf3.xsl"?>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <buchladen>
-	<kassa>
-		<angestellter status="filialleiter">
-			<vorname>Gerhard</vorname>
-			<nachname>Malik</nachname>
-			<geschlecht>m</geschlecht>
-			<einkommen>2400</einkommen>
-		</angestellter>
-		<angestellter status="vollzeit">
-			<vorname>Monika</vorname>
-			<nachname>Blum</nachname>
-			<geschlecht>w</geschlecht>
-			<einkommen>1930</einkommen>
-		</angestellter>
-	</kassa>
-	<lager>
-		<angestellter status="teilzeit">
-			<vorname>Andrea</vorname>
-			<nachname>Spury</nachname>
-			<geschlecht>w</geschlecht>
-			<einkommen>1450</einkommen>
-		</angestellter>
-		<angestellter status="lehrling">
-			<vorname>Georg</vorname>
-			<nachname>Wagner</nachname>
-			<geschlecht>m</geschlecht>
-			<einkommen>525</einkommen>
-		</angestellter>
-	</lager>
-	<bestellung>
-		<angestellter status="vollzeit">
-			<vorname>Gertrud</vorname>
-			<nachname>Becher</nachname>
-			<geschlecht>w</geschlecht>
-			<einkommen>1600</einkommen>
-		</angestellter>
-	</bestellung>
-	<buchabteilung>
-		<sachbuch>
-			<angestellter status="vollzeit">
-				<vorname>Gerlinde</vorname>
-				<nachname>Novak</nachname>
-				<geschlecht>w</geschlecht>
-				<einkommen>1600</einkommen>
-			</angestellter>
-			<buch>
-				<autor>
-					<vorname>Albert</vorname>
-					<nachname>Kapr</nachname>
-				</autor>
-				<buchtitel>Johannes Gutenberg. Persönlichkeit und Leisutng</buchtitel>
-				<verlag>C. H. Beck</verlag>
-				<isbn>3406315801</isbn>
-				<jahr>1987</jahr>
-				<ort>Leipzig</ort>
-				<hersteller>Interdruck</hersteller>
-				<auflage>1</auflage>
-				<lieferung status="nicht lagernd"/>
-			</buch>
-			<buch>
-				<autor>
-					<vorname>Bernard</vorname>
-					<nachname>Jakoby</nachname>
-				</autor>
-				<buchtitel>Auch du lebst ewig</buchtitel>
-				<verlag>Langen Müller</verlag>
-				<isbn>3784427758</isbn>
-				<jahr>2001</jahr>
-				<ort>München</ort>
-				<hersteller>Wiener Verlag</hersteller>
-				<auflage>4</auflage>
-				<lieferung status="bestellung"/>
-			</buch>
-			<buch>
-				<autor>
-					<vorname>Alberto</vorname>
-					<nachname>Manguel</nachname>
-				</autor>
-				<buchtitel>Eine Geschichte des Lesens</buchtitel>
-				<verlag>rororo</verlag>
-				<isbn>3499229080</isbn>
-				<jahr>1998</jahr>
-				<ort>Berlin</ort>
-				<hersteller>Verlag Volk und Welt</hersteller>
-				<auflage>1</auflage>
-				<lieferung status="lagernd"/>
-			</buch>
-			<buch>
-				<autor>
-					<vorname>Egon</vorname>
-					<nachname>Friedell</nachname>
-				</autor>
-				<buchtitel>Kulturgeschichte der Neuzeit</buchtitel>
-				<verlag>dtv</verlag>
-				<isbn>3423300620</isbn>
-				<jahr>1927</jahr>
-				<ort>München</ort>
-				<hersteller>C. H. Beck'sche Buchdruckerei</hersteller>
-				<auflage>13</auflage>
-				<lieferung status="lagernd"/>
-			</buch>
-		</sachbuch>
-		<belletristik>
-			<angestellter status="vollzeit">
-				<vorname>Annegret</vorname>
-				<nachname>Sauer</nachname>
-				<geschlecht>w</geschlecht>
-				<einkommen>1600</einkommen>
-			</angestellter>
-			<buch>
-				<autor>
-					<vorname>Marcel</vorname>
-					<nachname>Proust</nachname>
-				</autor>
-				<buchtitel>Auf der Suche nach der verlorenen Zeit</buchtitel>
-				<verlag>Suhrkamp Verlag</verlag>
-				<isbn>3423338920</isbn>
-				<jahr>1954</jahr>
-				<ort>Frankfurt</ort>
-				<hersteller>May + Co. Darmstadt</hersteller>
-				<auflage>1</auflage>
-				<lieferung status="bestellt"/>
-			</buch>
-			<buch>
-				<autor>
-					<vorname>James</vorname>
-					<nachname>Joyce</nachname>
-				</autor>
-				<buchtitel>Ulysses</buchtitel>
-				<verlag>Suhrkamp Verlag</verlag>
-				<isbn>342337690</isbn>
-				<jahr>1975</jahr>
-				<ort>Frankfurt</ort>
-				<hersteller>May + Co. Darmstadt</hersteller>
-				<auflage>1</auflage>
-				<lieferung status="lagernd"/>
-			</buch>
-			<buch>
-				<autor>
-					<vorname>Anton</vorname>
-					<nachname>Kuh</nachname>
-				</autor>
-				<buchtitel>Luftlinien</buchtitel>
-				<verlag>Löcker Verlag</verlag>
-				<isbn>3483600620</isbn>
-				<jahr>1981</jahr>
-				<ort>Berlin</ort>
-				<hersteller>Wiener Verlag</hersteller>
-				<auflage>3</auflage>
-				<lieferung status="lagernd"/>
-			</buch>
-			<buch>
-				<autor>
-					<vorname>Ingeborg</vorname>
-					<nachname>Bachmann</nachname>
-				</autor>
-				<buchtitel>Gesammelte Werke</buchtitel>
-				<verlag>R. Piper &amp; Co. Verlag</verlag>
-				<isbn>3420306020</isbn>
-				<jahr>1978</jahr>
-				<ort>München</ort>
-				<hersteller>Wiener Verlag</hersteller>
-				<auflage>3</auflage>
-				<lieferung status="bestellt"/>
-			</buch>
-		</belletristik>
-		<kochen>
-			<angestellter status="vollzeit">
-				<vorname>Diana</vorname>
-				<nachname>Kanisek</nachname>
-				<geschlecht>w</geschlecht>
-				<einkommen>1700</einkommen>
-			</angestellter>
-			<buch>
-				<autor>
-					<vorname>Ute</vorname>
-					<nachname>York</nachname>
-				</autor>
-				<buchtitel>Küchenkräuter</buchtitel>
-				<verlag>Seehamer Verlag GmbH</verlag>
-				<isbn>3929626357</isbn>
-				<jahr>1995</jahr>
-				<ort>Weyam</ort>
-				<hersteller>Uschi Müller</hersteller>
-				<auflage>1</auflage>
-				<lieferung status="lagernd"/>
-			</buch>
-			<buch>
-				<autor>
-					<vorname>Ewald</vorname>
-					<nachname>Plachutta</nachname>
-				</autor>
-				<buchtitel>Die gute Küche</buchtitel>
-				<verlag>Buchgemeinschaft Donauland</verlag>
-				<isbn>077016</isbn>
-				<jahr>1993</jahr>
-				<ort>Korneuburg</ort>
-				<hersteller>SRZ Korneuburg</hersteller>
-				<auflage>1</auflage>
-				<lieferung status="lagernd"/>
-			</buch>
-			<buch>
-				<autor>
-					<vorname>Reinhard</vorname>
-					<nachname>Gerer</nachname>
-				</autor>
-				<buchtitel>Große Küche aus Österreich</buchtitel>
-				<verlag>Orac</verlag>
-				<isbn>3701500932</isbn>
-				<jahr>1987</jahr>
-				<ort>Wien</ort>
-				<hersteller>Wiener Verlag</hersteller>
-				<auflage>1</auflage>
-				<lieferung status="lagernd"/>
-			</buch>
-			<buch>
-				<autor>
-					<vorname>Franco</vorname>
-					<nachname>Benussi</nachname>
-				</autor>
-				<buchtitel>Die echte italienische Küche</buchtitel>
-				<verlag>Gräfe und Unze</verlag>
-				<isbn>3423338571</isbn>
-				<jahr>1990</jahr>
-				<ort>Stuttgart München</ort>
-				<hersteller>Birgit Rademacker</hersteller>
-				<auflage>1</auflage>
-				<lieferung status="lagernd"/>
-			</buch>
-		</kochen>
-		<sprachen>
-			<angestellter status="teilzeit">
-				<vorname>Eva</vorname>
-				<nachname>Slupetzky</nachname>
-				<geschlecht>w</geschlecht>
-				<einkommen>1600</einkommen>
-			</angestellter>
-			<buch>
-				<autor>
-					<vorname>Fritz</vorname>
-					<nachname>Mauthner</nachname>
-				</autor>
-				<buchtitel>Sprache und Leben</buchtitel>
-				<verlag>Residenz Verlag</verlag>
-				<isbn>3701704651</isbn>
-				<jahr>1986</jahr>
-				<ort>Salzburg und Wien</ort>
-				<hersteller>Welsermühl</hersteller>
-				<auflage>1</auflage>
-				<lieferung status="bestellt"/>
-			</buch>
-			<buch>
-				<autor>
-					<vorname>Irmgard</vorname>
-					<nachname>Bock</nachname>
-				</autor>
-				<buchtitel>Kommunikation und Erziehung</buchtitel>
-				<verlag>Wissenschaftliche Buchgesellschaft Darmstadt</verlag>
-				<isbn>3534078861</isbn>
-				<jahr>1978</jahr>
-				<ort>Darmstadt</ort>
-				<hersteller>Maschinensetzerei Janß</hersteller>
-				<auflage>1</auflage>
-				<lieferung status="nicht lagernd"/>
-			</buch>
-			<buch>
-				<autor>
-					<vorname>Marcus Fabius</vorname>
-					<nachname>Quintilian</nachname>
-				</autor>
-				<buchtitel>Ausbildung des Redners</buchtitel>
-				<verlag>Wissenschaftliche Buchgemeinschaft Darmstadt</verlag>
-				<isbn>3535046374</isbn>
-				<jahr>1995</jahr>
-				<ort>Darmstadt</ort>
-				<hersteller>Wissenschaftliche Buchgesellschaft</hersteller>
-				<auflage>2</auflage>
-				<lieferung status="nicht lagernd"/>
-			</buch>
-			<buch>
-				<autor>
-					<vorname>Roland W.</vorname>
-					<nachname>Wagner</nachname>
-				</autor>
-				<buchtitel>Grundlagen der mündlichen Kommunikation</buchtitel>
-				<verlag>bayerischer verlag für sprechwissenschaft</verlag>
-				<isbn>3922757944</isbn>
-				<jahr>1999</jahr>
-				<ort>Regensburg</ort>
-				<hersteller>Druckerei Millizer</hersteller>
-				<auflage>8</auflage>
-				<lieferung status="lagernd"/>
-			</buch>
-		</sprachen>
-		<edv>
-			<angestellter status="vollzeit">
-				<vorname>Ewald</vorname>
-				<nachname>Nowotny</nachname>
-				<geschlecht>m</geschlecht>
-				<einkommen>1700</einkommen>
-			</angestellter>
-			<buch>
-				<autor>
-					<vorname>Elliot Rusty</vorname>
-					<nachname>Harold</nachname>
-				</autor>
-				<buchtitel>XML-Bibel</buchtitel>
-				<verlag>mitp</verlag>
-				<isbn>3826608216</isbn>
-				<jahr>2002</jahr>
-				<ort>Bonn</ort>
-				<hersteller>Media-Print</hersteller>
-				<auflage>2</auflage>
-				<lieferung status="lagernd"/>
-			</buch>
-			<buch>
-				<autor>
-					<vorname>Martina</vorname>
-					<nachname>Manhartsberger</nachname>
-				</autor>
-				<buchtitel>Web Usability</buchtitel>
-				<verlag>Galileo</verlag>
-				<isbn>3898421872</isbn>
-				<jahr>2001</jahr>
-				<ort>Bonn</ort>
-				<hersteller>Sandra Gottmann</hersteller>
-				<auflage>1</auflage>
-				<lieferung status="lagernd"/>
-			</buch>
-			<buch>
-				<autor>
-					<vorname>Doug</vorname>
-					<nachname>Tidwell</nachname>
-				</autor>
-				<buchtitel>XSLT</buchtitel>
-				<verlag>O'Reilly</verlag>
-				<isbn>389721297</isbn>
-				<jahr>2002</jahr>
-				<ort>Köln</ort>
-				<hersteller>Geesche Kieckbusch</hersteller>
-				<auflage>1</auflage>
-				<lieferung status="lagernd"/>
-			</buch>
-			<buch>
-				<autor>
-					<vorname>William J.</vorname>
-					<nachname>Pardi</nachname>
-				</autor>
-				<buchtitel>XML in Action</buchtitel>
-				<verlag>Microsoft Press</verlag>
-				<isbn>3860634860</isbn>
-				<jahr>1999</jahr>
-				<ort>Unterschleißheim</ort>
-				<hersteller>Kösel</hersteller>
-				<auflage>1</auflage>
-				<lieferung status="lagernd"/>
-			</buch>
-			<buch>
-				<autor>
-					<vorname>Steven</vorname>
-					<nachname>Holzner</nachname>
-				</autor>
-				<buchtitel>XML</buchtitel>
-				<verlag>Markt+Technik</verlag>
-				<isbn>3827260906</isbn>
-				<jahr>2001</jahr>
-				<ort>München</ort>
-				<hersteller>Claudia Bäurle</hersteller>
-				<auflage>1</auflage>
-				<lieferung status="bestellt"/>
-			</buch>
-			<buch>
-				<autor>
-					<vorname>Dave</vorname>
-					<nachname>Addey</nachname>
-				</autor>
-				<buchtitel>Practical XML for the Web</buchtitel>
-				<verlag>glasshaus</verlag>
-				<isbn>1904151086</isbn>
-				<jahr>2002</jahr>
-				<ort>Birmingham</ort>
-				<hersteller>Viv Emery</hersteller>
-				<auflage>1</auflage>
-				<lieferung status="nicht lagernd"/>
-			</buch>
-		</edv>
-		<medizin>
-			<angestellter status="vollzeit">
-				<vorname>Heinrich</vorname>
-				<nachname>Vorderegger</nachname>
-				<geschlecht>m</geschlecht>
-				<einkommen>1700</einkommen>
-			</angestellter>
-			<buch>
-				<autor>
-					<vorname>Sherry S.</vorname>
-					<nachname>Cohen</nachname>
-				</autor>
-				<buchtitel>Magie der Berührung</buchtitel>
-				<verlag>Heyne</verlag>
-				<isbn>3453049608</isbn>
-				<jahr>1989</jahr>
-				<ort>Genf</ort>
-				<hersteller>Press-Druck</hersteller>
-				<auflage>1</auflage>
-				<lieferung status="bestellt"/>
-			</buch>
-			<buch>
-				<autor>
-					<vorname>Josef</vorname>
-					<nachname>Petters</nachname>
-				</autor>
-				<buchtitel>Anatomie des menschlichen Körpers</buchtitel>
-				<verlag>body-mind</verlag>
-				<isbn>3455520225</isbn>
-				<jahr>1998</jahr>
-				<ort>München</ort>
-				<hersteller>Press-Druck</hersteller>
-				<auflage>4</auflage>
-				<lieferung status="lagernd"/>
-			</buch>
-			<buch>
-				<autor>
-					<vorname>Gerlinde</vorname>
-					<nachname>Wolters</nachname>
-				</autor>
-				<buchtitel>Handbuch der natürlichen Heilmittel</buchtitel>
-				<verlag>Eigenverlag</verlag>
-				<isbn>3122578951</isbn>
-				<jahr>1996</jahr>
-				<ort>Wien</ort>
-				<hersteller>Wolters-Type</hersteller>
-				<auflage>1</auflage>
-				<lieferung status="nicht lagernd"/>
-			</buch>
-		</medizin>
-		<philosophie>
-			<angestellter status="teilzeit">
-				<vorname>Jan</vorname>
-				<nachname>Pekarek</nachname>
-				<geschlecht>m</geschlecht>
-				<einkommen>1000</einkommen>
-			</angestellter>
-			<buch>
-				<autor>
-					<vorname>Bernhard H. F.</vorname>
-					<nachname>Taureck</nachname>
-				</autor>
-				<buchtitel>Die Sohphisten zur Einführung</buchtitel>
-				<verlag>Junius</verlag>
-				<isbn>3885069105</isbn>
-				<jahr>1995</jahr>
-				<ort>Hamburg</ort>
-				<hersteller>Das Herstellungsbüro, Hamburg</hersteller>
-				<auflage>1</auflage>
-				<lieferung status="bestellt"/>
-			</buch>
-			<buch>
-				<autor>
-					<vorname>Martin</vorname>
-					<nachname>Buber</nachname>
-				</autor>
-				<buchtitel>Das dialogische Prinzip</buchtitel>
-				<verlag>Lambert Schneider</verlag>
-				<isbn>3795300169</isbn>
-				<jahr>1994</jahr>
-				<ort>Gerlingen</ort>
-				<hersteller>Kösel, Kempten</hersteller>
-				<auflage>7</auflage>
-				<lieferung status="lagernd"/>
-			</buch>
-		</philosophie>
-	</buchabteilung>
+  <kassa>
+    <angestellter status="filialleiter">
+      <vorname>Gerhard</vorname>
+      <nachname>Malik</nachname>
+      <geschlecht>m</geschlecht>
+      <einkommen>2400</einkommen>
+    </angestellter>
+    <angestellter status="vollzeit">
+      <vorname>Monika</vorname>
+      <nachname>Blum</nachname>
+      <geschlecht>w</geschlecht>
+      <einkommen>1930</einkommen>
+    </angestellter>
+  </kassa>
+  <lager>
+    <angestellter status="teilzeit">
+      <vorname>Andrea</vorname>
+      <nachname>Spury</nachname>
+      <geschlecht>w</geschlecht>
+      <einkommen>1450</einkommen>
+    </angestellter>
+    <angestellter status="lehrling">
+      <vorname>Georg</vorname>
+      <nachname>Wagner</nachname>
+      <geschlecht>m</geschlecht>
+      <einkommen>525</einkommen>
+    </angestellter>
+  </lager>
+  <bestellung>
+    <angestellter status="vollzeit">
+      <vorname>Gertrud</vorname>
+      <nachname>Becher</nachname>
+      <geschlecht>w</geschlecht>
+      <einkommen>1600</einkommen>
+    </angestellter>
+  </bestellung>
+  <buchabteilung>
+    <sachbuch>
+      <angestellter status="vollzeit">
+        <vorname>Gerlinde</vorname>
+        <nachname>Novak</nachname>
+        <geschlecht>w</geschlecht>
+        <einkommen>1600</einkommen>
+      </angestellter>
+      <buch>
+        <autor>
+          <vorname>Albert</vorname>
+          <nachname>Kapr</nachname>
+        </autor>
+        <buchtitel>Johannes Gutenberg. Persönlichkeit und Leisutng</buchtitel>
+        <verlag>C. H. Beck</verlag>
+        <isbn>3406315801</isbn>
+        <jahr>1987</jahr>
+        <ort>Leipzig</ort>
+        <hersteller>Interdruck</hersteller>
+        <auflage>1</auflage>
+        <lieferung status="nicht lagernd"/>
+      </buch>
+      <buch>
+        <autor>
+          <vorname>Bernard</vorname>
+          <nachname>Jakoby</nachname>
+        </autor>
+        <buchtitel>Auch du lebst ewig</buchtitel>
+        <verlag>Langen Müller</verlag>
+        <isbn>3784427758</isbn>
+        <jahr>2001</jahr>
+        <ort>München</ort>
+        <hersteller>Wiener Verlag</hersteller>
+        <auflage>4</auflage>
+        <lieferung status="bestellung"/>
+      </buch>
+      <buch>
+        <autor>
+          <vorname>Alberto</vorname>
+          <nachname>Manguel</nachname>
+        </autor>
+        <buchtitel>Eine Geschichte des Lesens</buchtitel>
+        <verlag>rororo</verlag>
+        <isbn>3499229080</isbn>
+        <jahr>1998</jahr>
+        <ort>Berlin</ort>
+        <hersteller>Verlag Volk und Welt</hersteller>
+        <auflage>1</auflage>
+        <lieferung status="lagernd"/>
+      </buch>
+      <buch>
+        <autor>
+          <vorname>Egon</vorname>
+          <nachname>Friedell</nachname>
+        </autor>
+        <buchtitel>Kulturgeschichte der Neuzeit</buchtitel>
+        <verlag>dtv</verlag>
+        <isbn>3423300620</isbn>
+        <jahr>1927</jahr>
+        <ort>München</ort>
+        <hersteller>C. H. Beck'sche Buchdruckerei</hersteller>
+        <auflage>13</auflage>
+        <lieferung status="lagernd"/>
+      </buch>
+    </sachbuch>
+    <belletristik>
+      <angestellter status="vollzeit">
+        <vorname>Annegret</vorname>
+        <nachname>Sauer</nachname>
+        <geschlecht>w</geschlecht>
+        <einkommen>1600</einkommen>
+      </angestellter>
+      <buch>
+        <autor>
+          <vorname>Marcel</vorname>
+          <nachname>Proust</nachname>
+        </autor>
+        <buchtitel>Auf der Suche nach der verlorenen Zeit</buchtitel>
+        <verlag>Suhrkamp Verlag</verlag>
+        <isbn>3423338920</isbn>
+        <jahr>1954</jahr>
+        <ort>Frankfurt</ort>
+        <hersteller>May + Co. Darmstadt</hersteller>
+        <auflage>1</auflage>
+        <lieferung status="bestellt"/>
+      </buch>
+      <buch>
+        <autor>
+          <vorname>James</vorname>
+          <nachname>Joyce</nachname>
+        </autor>
+        <buchtitel>Ulysses</buchtitel>
+        <verlag>Suhrkamp Verlag</verlag>
+        <isbn>342337690</isbn>
+        <jahr>1975</jahr>
+        <ort>Frankfurt</ort>
+        <hersteller>May + Co. Darmstadt</hersteller>
+        <auflage>1</auflage>
+        <lieferung status="lagernd"/>
+      </buch>
+      <buch>
+        <autor>
+          <vorname>Anton</vorname>
+          <nachname>Kuh</nachname>
+        </autor>
+        <buchtitel>Luftlinien</buchtitel>
+        <verlag>Löcker Verlag</verlag>
+        <isbn>3483600620</isbn>
+        <jahr>1981</jahr>
+        <ort>Berlin</ort>
+        <hersteller>Wiener Verlag</hersteller>
+        <auflage>3</auflage>
+        <lieferung status="lagernd"/>
+      </buch>
+      <buch>
+        <autor>
+          <vorname>Ingeborg</vorname>
+          <nachname>Bachmann</nachname>
+        </autor>
+        <buchtitel>Gesammelte Werke</buchtitel>
+        <verlag>R. Piper &amp; Co. Verlag</verlag>
+        <isbn>3420306020</isbn>
+        <jahr>1978</jahr>
+        <ort>München</ort>
+        <hersteller>Wiener Verlag</hersteller>
+        <auflage>3</auflage>
+        <lieferung status="bestellt"/>
+      </buch>
+      <buch>
+        <autor>
+          <vorname>asdsad</vorname>
+          <nachname/>
+        </autor>
+        <buchtitel>erwet</buchtitel>
+        <verlag>hgdf</verlag>
+        <isbn>3</isbn>
+        <jahr>5</jahr>
+        <ort>gdfgdj</ort>
+        <hersteller>sdg</hersteller>
+        <auflage>45</auflage>
+        <lieferung status="lagernd"/>
+      </buch>
+    </belletristik>
+    <kochen>
+      <angestellter status="vollzeit">
+        <vorname>Diana</vorname>
+        <nachname>Kanisek</nachname>
+        <geschlecht>w</geschlecht>
+        <einkommen>1700</einkommen>
+      </angestellter>
+      <buch>
+        <autor>
+          <vorname>Ute</vorname>
+          <nachname>York</nachname>
+        </autor>
+        <buchtitel>Küchenkräuter</buchtitel>
+        <verlag>Seehamer Verlag GmbH</verlag>
+        <isbn>3929626357</isbn>
+        <jahr>1995</jahr>
+        <ort>Weyam</ort>
+        <hersteller>Uschi Müller</hersteller>
+        <auflage>1</auflage>
+        <lieferung status="lagernd"/>
+      </buch>
+      <buch>
+        <autor>
+          <vorname>Ewald</vorname>
+          <nachname>Plachutta</nachname>
+        </autor>
+        <buchtitel>Die gute Küche</buchtitel>
+        <verlag>Buchgemeinschaft Donauland</verlag>
+        <isbn>077016</isbn>
+        <jahr>1993</jahr>
+        <ort>Korneuburg</ort>
+        <hersteller>SRZ Korneuburg</hersteller>
+        <auflage>1</auflage>
+        <lieferung status="lagernd"/>
+      </buch>
+      <buch>
+        <autor>
+          <vorname>Reinhard</vorname>
+          <nachname>Gerer</nachname>
+        </autor>
+        <buchtitel>Große Küche aus Österreich</buchtitel>
+        <verlag>Orac</verlag>
+        <isbn>3701500932</isbn>
+        <jahr>1987</jahr>
+        <ort>Wien</ort>
+        <hersteller>Wiener Verlag</hersteller>
+        <auflage>1</auflage>
+        <lieferung status="lagernd"/>
+      </buch>
+      <buch>
+        <autor>
+          <vorname>Franco</vorname>
+          <nachname>Benussi</nachname>
+        </autor>
+        <buchtitel>Die echte italienische Küche</buchtitel>
+        <verlag>Gräfe und Unze</verlag>
+        <isbn>3423338571</isbn>
+        <jahr>1990</jahr>
+        <ort>Stuttgart München</ort>
+        <hersteller>Birgit Rademacker</hersteller>
+        <auflage>1</auflage>
+        <lieferung status="lagernd"/>
+      </buch>
+      <buch>
+        <autor>
+          <vorname>koch</vorname>
+          <nachname/>
+        </autor>
+        <buchtitel>susser</buchtitel>
+        <verlag>lil</verlag>
+        <isbn>123</isbn>
+        <jahr>55</jahr>
+        <ort>HTL3R</ort>
+        <hersteller>such</hersteller>
+        <auflage>3</auflage>
+        <lieferung status="lagernd"/>
+      </buch>
+      <buch>
+        <autor>
+          <vorname>as</vorname>
+          <nachname/>
+        </autor>
+        <buchtitel>asd</buchtitel>
+        <verlag>asd</verlag>
+        <isbn>2</isbn>
+        <jahr>33</jahr>
+        <ort>asd</ort>
+        <hersteller>grr</hersteller>
+        <auflage>3</auflage>
+        <lieferung status="lagernd"/>
+      </buch>
+    </kochen>
+    <sprachen>
+      <angestellter status="teilzeit">
+        <vorname>Eva</vorname>
+        <nachname>Slupetzky</nachname>
+        <geschlecht>w</geschlecht>
+        <einkommen>1600</einkommen>
+      </angestellter>
+      <buch>
+        <autor>
+          <vorname>Fritz</vorname>
+          <nachname>Mauthner</nachname>
+        </autor>
+        <buchtitel>Sprache und Leben</buchtitel>
+        <verlag>Residenz Verlag</verlag>
+        <isbn>3701704651</isbn>
+        <jahr>1986</jahr>
+        <ort>Salzburg und Wien</ort>
+        <hersteller>Welsermühl</hersteller>
+        <auflage>1</auflage>
+        <lieferung status="bestellt"/>
+      </buch>
+      <buch>
+        <autor>
+          <vorname>Irmgard</vorname>
+          <nachname>Bock</nachname>
+        </autor>
+        <buchtitel>Kommunikation und Erziehung</buchtitel>
+        <verlag>Wissenschaftliche Buchgesellschaft Darmstadt</verlag>
+        <isbn>3534078861</isbn>
+        <jahr>1978</jahr>
+        <ort>Darmstadt</ort>
+        <hersteller>Maschinensetzerei Janß</hersteller>
+        <auflage>1</auflage>
+        <lieferung status="nicht lagernd"/>
+      </buch>
+      <buch>
+        <autor>
+          <vorname>Marcus Fabius</vorname>
+          <nachname>Quintilian</nachname>
+        </autor>
+        <buchtitel>Ausbildung des Redners</buchtitel>
+        <verlag>Wissenschaftliche Buchgemeinschaft Darmstadt</verlag>
+        <isbn>3535046374</isbn>
+        <jahr>1995</jahr>
+        <ort>Darmstadt</ort>
+        <hersteller>Wissenschaftliche Buchgesellschaft</hersteller>
+        <auflage>2</auflage>
+        <lieferung status="nicht lagernd"/>
+      </buch>
+      <buch>
+        <autor>
+          <vorname>Roland W.</vorname>
+          <nachname>Wagner</nachname>
+        </autor>
+        <buchtitel>Grundlagen der mündlichen Kommunikation</buchtitel>
+        <verlag>bayerischer verlag für sprechwissenschaft</verlag>
+        <isbn>3922757944</isbn>
+        <jahr>1999</jahr>
+        <ort>Regensburg</ort>
+        <hersteller>Druckerei Millizer</hersteller>
+        <auflage>8</auflage>
+        <lieferung status="lagernd"/>
+      </buch>
+    </sprachen>
+    <edv>
+      <angestellter status="vollzeit">
+        <vorname>Ewald</vorname>
+        <nachname>Nowotny</nachname>
+        <geschlecht>m</geschlecht>
+        <einkommen>1700</einkommen>
+      </angestellter>
+      <buch>
+        <autor>
+          <vorname>Elliot Rusty</vorname>
+          <nachname>Harold</nachname>
+        </autor>
+        <buchtitel>XML-Bibel</buchtitel>
+        <verlag>mitp</verlag>
+        <isbn>3826608216</isbn>
+        <jahr>2002</jahr>
+        <ort>Bonn</ort>
+        <hersteller>Media-Print</hersteller>
+        <auflage>2</auflage>
+        <lieferung status="lagernd"/>
+      </buch>
+      <buch>
+        <autor>
+          <vorname>Martina</vorname>
+          <nachname>Manhartsberger</nachname>
+        </autor>
+        <buchtitel>Web Usability</buchtitel>
+        <verlag>Galileo</verlag>
+        <isbn>3898421872</isbn>
+        <jahr>2001</jahr>
+        <ort>Bonn</ort>
+        <hersteller>Sandra Gottmann</hersteller>
+        <auflage>1</auflage>
+        <lieferung status="lagernd"/>
+      </buch>
+      <buch>
+        <autor>
+          <vorname>Doug</vorname>
+          <nachname>Tidwell</nachname>
+        </autor>
+        <buchtitel>XSLT</buchtitel>
+        <verlag>O'Reilly</verlag>
+        <isbn>389721297</isbn>
+        <jahr>2002</jahr>
+        <ort>Köln</ort>
+        <hersteller>Geesche Kieckbusch</hersteller>
+        <auflage>1</auflage>
+        <lieferung status="lagernd"/>
+      </buch>
+      <buch>
+        <autor>
+          <vorname>William J.</vorname>
+          <nachname>Pardi</nachname>
+        </autor>
+        <buchtitel>XML in Action</buchtitel>
+        <verlag>Microsoft Press</verlag>
+        <isbn>3860634860</isbn>
+        <jahr>1999</jahr>
+        <ort>Unterschleißheim</ort>
+        <hersteller>Kösel</hersteller>
+        <auflage>1</auflage>
+        <lieferung status="lagernd"/>
+      </buch>
+      <buch>
+        <autor>
+          <vorname>Steven</vorname>
+          <nachname>Holzner</nachname>
+        </autor>
+        <buchtitel>XML</buchtitel>
+        <verlag>Markt+Technik</verlag>
+        <isbn>3827260906</isbn>
+        <jahr>2001</jahr>
+        <ort>München</ort>
+        <hersteller>Claudia Bäurle</hersteller>
+        <auflage>1</auflage>
+        <lieferung status="bestellt"/>
+      </buch>
+      <buch>
+        <autor>
+          <vorname>Dave</vorname>
+          <nachname>Addey</nachname>
+        </autor>
+        <buchtitel>Practical XML for the Web</buchtitel>
+        <verlag>glasshaus</verlag>
+        <isbn>1904151086</isbn>
+        <jahr>2002</jahr>
+        <ort>Birmingham</ort>
+        <hersteller>Viv Emery</hersteller>
+        <auflage>1</auflage>
+        <lieferung status="nicht lagernd"/>
+      </buch>
+      <buch>
+        <autor>
+          <vorname>Kasper</vorname>
+          <nachname/>
+        </autor>
+        <buchtitel>Java is auch eine Insel</buchtitel>
+        <verlag>KasperSEW</verlag>
+        <isbn>987</isbn>
+        <jahr>1982</jahr>
+        <ort>Java</ort>
+        <hersteller>Kas</hersteller>
+        <auflage>21</auflage>
+        <lieferung status="lagernd"/>
+      </buch>
+    </edv>
+    <medizin>
+      <angestellter status="vollzeit">
+        <vorname>Heinrich</vorname>
+        <nachname>Vorderegger</nachname>
+        <geschlecht>m</geschlecht>
+        <einkommen>1700</einkommen>
+      </angestellter>
+      <buch>
+        <autor>
+          <vorname>Sherry S.</vorname>
+          <nachname>Cohen</nachname>
+        </autor>
+        <buchtitel>Magie der Berührung</buchtitel>
+        <verlag>Heyne</verlag>
+        <isbn>3453049608</isbn>
+        <jahr>1989</jahr>
+        <ort>Genf</ort>
+        <hersteller>Press-Druck</hersteller>
+        <auflage>1</auflage>
+        <lieferung status="bestellt"/>
+      </buch>
+      <buch>
+        <autor>
+          <vorname>Josef</vorname>
+          <nachname>Petters</nachname>
+        </autor>
+        <buchtitel>Anatomie des menschlichen Körpers</buchtitel>
+        <verlag>body-mind</verlag>
+        <isbn>3455520225</isbn>
+        <jahr>1998</jahr>
+        <ort>München</ort>
+        <hersteller>Press-Druck</hersteller>
+        <auflage>4</auflage>
+        <lieferung status="lagernd"/>
+      </buch>
+      <buch>
+        <autor>
+          <vorname>Gerlinde</vorname>
+          <nachname>Wolters</nachname>
+        </autor>
+        <buchtitel>Handbuch der natürlichen Heilmittel</buchtitel>
+        <verlag>Eigenverlag</verlag>
+        <isbn>3122578951</isbn>
+        <jahr>1996</jahr>
+        <ort>Wien</ort>
+        <hersteller>Wolters-Type</hersteller>
+        <auflage>1</auflage>
+        <lieferung status="nicht lagernd"/>
+      </buch>
+    </medizin>
+    <philosophie>
+      <angestellter status="teilzeit">
+        <vorname>Jan</vorname>
+        <nachname>Pekarek</nachname>
+        <geschlecht>m</geschlecht>
+        <einkommen>1000</einkommen>
+      </angestellter>
+      <buch>
+        <autor>
+          <vorname>Bernhard H. F.</vorname>
+          <nachname>Taureck</nachname>
+        </autor>
+        <buchtitel>Die Sohphisten zur Einführung</buchtitel>
+        <verlag>Junius</verlag>
+        <isbn>3885069105</isbn>
+        <jahr>1995</jahr>
+        <ort>Hamburg</ort>
+        <hersteller>Das Herstellungsbüro, Hamburg</hersteller>
+        <auflage>1</auflage>
+        <lieferung status="bestellt"/>
+      </buch>
+      <buch>
+        <autor>
+          <vorname>Martin</vorname>
+          <nachname>Buber</nachname>
+        </autor>
+        <buchtitel>Das dialogische Prinzip</buchtitel>
+        <verlag>Lambert Schneider</verlag>
+        <isbn>3795300169</isbn>
+        <jahr>1994</jahr>
+        <ort>Gerlingen</ort>
+        <hersteller>Kösel, Kempten</hersteller>
+        <auflage>7</auflage>
+        <lieferung status="lagernd"/>
+      </buch>
+    </philosophie>
+  </buchabteilung>
 </buchladen>

@@ -59,6 +59,15 @@ app.post("/setbook", async (req, res) => {
   current_xml_file.buchladen.buchabteilung[0][[req.body.abteilung]][0].buch.push(buchdaten);
   console.log(current_xml_file.buchladen.buchabteilung[0][[req.body.abteilung]][0].buch);
 
+  var builder = new parser.Builder();
+  var xml = builder.buildObject(current_xml_file);
+
+  fs.writeFile("buchladen.xml", xml, function(err, data) {
+    if (err) console.log(err);
+
+    console.log("successfully written our update xml to file");
+  });
+
   let success_status = "";
   
   res.send({data : success_status})

@@ -23,10 +23,6 @@ export default function Main(){
     const [abteilungBooks, setAbteilungBooks] = useState();
     const [abteilungen, setAbteilungen] = useState();
 
-    
-    async function getData(){
-        return await fetch("http://localhost:5000/").then(res=>res.json()).then(data=>data.data).then(d=>setAbteilungen(d));
-      }
 
     async function getInfo(){
         return await fetch("http://localhost:5000/infos").then(res=>res.json()).then(data=>data.data).then(d=>setAbteilungen(d));
@@ -39,6 +35,16 @@ export default function Main(){
       async function getBooks(){
         return await fetch("http://localhost:5000/sections").then(res=>res.json()).then(data=>data.data).then(d=>setAbteilungen(d));
       }
+
+    function postNewBook(bookdata){
+      return postData("http://localhost:5000/setbook", {abteilung: selectedAbteilung, buchdaten:bookdata})
+      .then(data=>data.data);
+    }
+
+    function getCurrentBooks(){
+      postData("http://localhost:5000/abteilung", {abteilung: selectedAbteilung}).then(data=>data.data).then(d=>setAbteilungBooks(d));
+    }
+
 
     useEffect(()=>{
         setLoaded(true);
@@ -53,32 +59,8 @@ export default function Main(){
 
     useEffect(()=>{
       if (selectedAbteilung){
-        postData("http://localhost:5000/abteilung", {abteilung: selectedAbteilung}).then(data=>data.data).then(d=>setAbteilungBooks(d));
+        getCurrentBooks();
       }
-
-      /* BUCH:
-      autor: [ [Object] ],
-      buchtitel: [ 'Kulturgeschichte der Neuzeit' ],
-      verlag: [ 'dtv' ],
-      isbn: [ '3423300620' ],
-      jahr: [ '1927' ],
-      ort: [ 'München' ],
-      hersteller: [ "C. H. Beck'sche Buchdruckerei" ],
-      auflage: [ '13' ],
-      lieferung: [ [Object] ]
-      */
-
-      console.log(postData("http://localhost:5000/setbook", {abteilung: "sachbuch", buchdaten:{
-        autor: [ ["susus", "Amogus"] ],
-        buchtitel: [ 'Sus der Neuzeit' ],
-        verlag: [ 'AMOGUS' ],
-        isbn: [ '38377469' ],
-        jahr: [ '420' ],
-        ort: [ 'Hainburg' ],
-        hersteller: [ "amog us" ],
-        auflage: [ '69' ],
-        lieferung: [ ['sus'] ]
-      }}).then(data=>data.data));
 
     }, [selectedAbteilung]);
 
@@ -131,7 +113,8 @@ return(
             )}
         </TableBody>
       </Table>
-      <AddBookDialog></AddBookDialog>
+      
+      {selectedAbteilung && <AddBookDialog getData={getCurrentBooks} postNewBook={postNewBook}></AddBookDialog>}
     </Box>
     
     </div>
