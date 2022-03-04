@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { useState } from "react";
 import {FormControl, InputLabel, MenuItem, Select, Divider, Box, AppBar, Toolbar, Typography, Table, TableRow, TableCell, TableBody, TableHead} from "@mui/material"
+import AddIcon from '@mui/icons-material/Add';
 
 async function postData(url = '', data = {}) {
   const response = await fetch(url, {
@@ -54,6 +55,30 @@ export default function Main(){
         postData("http://localhost:5000/abteilung", {abteilung: selectedAbteilung}).then(data=>data.data).then(d=>setAbteilungBooks(d));
       }
 
+      /* BUCH:
+      autor: [ [Object] ],
+      buchtitel: [ 'Kulturgeschichte der Neuzeit' ],
+      verlag: [ 'dtv' ],
+      isbn: [ '3423300620' ],
+      jahr: [ '1927' ],
+      ort: [ 'München' ],
+      hersteller: [ "C. H. Beck'sche Buchdruckerei" ],
+      auflage: [ '13' ],
+      lieferung: [ [Object] ]
+      */
+
+      console.log(postData("http://localhost:5000/setbook", {abteilung: "sachbuch", buchdaten:{
+        autor: [ ["susus", "Amogus"] ],
+        buchtitel: [ 'Sus der Neuzeit' ],
+        verlag: [ 'AMOGUS' ],
+        isbn: [ '38377469' ],
+        jahr: [ '420' ],
+        ort: [ 'Hainburg' ],
+        hersteller: [ "amog us" ],
+        auflage: [ '69' ],
+        lieferung: [ ['sus'] ]
+      }}).then(data=>data.data));
+
     }, [selectedAbteilung]);
 
 
@@ -105,6 +130,9 @@ return(
             )}
         </TableBody>
       </Table>
+      <Button variant="contained" startIcon={<AddIcon />}>
+        Add Book
+      </Button>
     </Box>
     
     </div>

@@ -42,7 +42,27 @@ app.post("/abteilung", async (req, res) => {
   res.send({data: data.buchladen.buchabteilung[0][req.body.abteilung][0].buch});
 });
 
+app.get('/sec:data', async (req, res) => {
+  res.send({data: req});
+});
 
+
+
+// Add Book:
+// Elements: buch, autor(vorname, nachname), buchtitel, verlag, isbn, jahr, ort, hersteller, auflage, lieferung
+// Path: Buchladen, Buchabteilung, Abteilung
+
+app.post("/setbook", async (req, res) => {
+  let current_xml_file = await getXMLFiletoJSON();
+  let buchdaten = req.body.buchdaten;
+
+  current_xml_file.buchladen.buchabteilung[0][[req.body.abteilung]][0].buch.push(buchdaten);
+  console.log(current_xml_file.buchladen.buchabteilung[0][[req.body.abteilung]][0].buch);
+
+  let success_status = "";
+  
+  res.send({data : success_status})
+});
 
 app.get('/infos', (req, res) => {
   res.send({data: ['Hello World!', 'other Data', 'Sussys']})
@@ -51,3 +71,4 @@ app.get('/infos', (req, res) => {
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
 })
+
