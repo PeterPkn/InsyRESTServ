@@ -32,7 +32,7 @@ export default function AddBookDialog(){
       */
 
     return(
-        <div>
+        <div style={{display:'flex', justifyContent:'center', margin:50}}>
       <Button variant="outlined" onClick={handleClickOpen}>
         Buch hinzufügen
       </Button>
@@ -48,6 +48,7 @@ export default function AddBookDialog(){
             id="autor"
             label="Autor"
             variant="standard"
+            type={'text'}
           />
          <TextField
             autoFocus
@@ -55,6 +56,7 @@ export default function AddBookDialog(){
             id="Buchtitel"
             label="Buchtitel"
             variant="standard"
+            type={'text'}
           />
          <TextField
             autoFocus
@@ -68,6 +70,44 @@ export default function AddBookDialog(){
             margin="dense"
             id="isbn"
             label="ISBN"
+            variant="standard"
+            type={'number'}
+          />
+          <TextField
+            autoFocus
+            margin="dense"
+            id="Jahr"
+            label="Jahr"
+            variant="standard"
+            type={'number'}
+          />
+          <TextField
+            autoFocus
+            margin="dense"
+            id="ort"
+            label="Ort"
+            variant="standard"
+          />
+          <TextField
+            autoFocus
+            margin="dense"
+            id="hersteller"
+            label="Hersteller"
+            variant="standard"
+          />
+          <TextField
+            autoFocus
+            margin="dense"
+            id="auflage"
+            label="Auflage"
+            variant="standard"
+            type={'number'}
+          />
+          <TextField
+            autoFocus
+            margin="dense"
+            id="lieferung"
+            label="Lieferung"
             variant="standard"
           />
         </DialogContent>

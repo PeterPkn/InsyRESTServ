@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import { useState } from "react";
 import {FormControl, InputLabel, MenuItem, Select, Divider, Box, AppBar, Toolbar, Typography, Table, TableRow, TableCell, TableBody, TableHead} from "@mui/material"
 import AddIcon from '@mui/icons-material/Add';
+import AddBookDialog from "./AddBookDialog";
 
 async function postData(url = '', data = {}) {
   const response = await fetch(url, {
@@ -130,9 +131,7 @@ return(
             )}
         </TableBody>
       </Table>
-      <Button variant="contained" startIcon={<AddIcon />}>
-        Add Book
-      </Button>
+      <AddBookDialog></AddBookDialog>
     </Box>
     
     </div>
