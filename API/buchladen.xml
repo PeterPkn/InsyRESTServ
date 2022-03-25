@@ -178,6 +178,104 @@
         <auflage>45</auflage>
         <lieferung status="lagernd"/>
       </buch>
+      <buch>
+        <autor>
+          <vorname>komar</vorname>
+          <nachname/>
+        </autor>
+        <buchtitel>SussyGriechenland</buchtitel>
+        <verlag>Benjmin</verlag>
+        <isbn>1233403984</isbn>
+        <jahr>2345</jahr>
+        <ort>griechnland</ort>
+        <hersteller>AmongGriechen</hersteller>
+        <auflage>69</auflage>
+        <lieferung status="Lagernd"/>
+      </buch>
+      <buch>
+        <autor>
+          <vorname>komar</vorname>
+          <nachname/>
+        </autor>
+        <buchtitel>SussyGriechenland</buchtitel>
+        <verlag>Benjmin</verlag>
+        <isbn>1233403984</isbn>
+        <jahr>2345</jahr>
+        <ort>griechnland</ort>
+        <hersteller>AmongGriechen</hersteller>
+        <auflage>69</auflage>
+        <lieferung status="Lagernd"/>
+      </buch>
+      <buch>
+        <autor>
+          <vorname>komar</vorname>
+          <nachname/>
+        </autor>
+        <buchtitel>SussyGriechenland</buchtitel>
+        <verlag>Benjmin</verlag>
+        <isbn>1233403984</isbn>
+        <jahr>2345</jahr>
+        <ort>griechnland</ort>
+        <hersteller>AmongGriechen</hersteller>
+        <auflage>69</auflage>
+        <lieferung status="Lagernd"/>
+      </buch>
+      <buch>
+        <autor>
+          <vorname>peter</vorname>
+          <nachname>xxx</nachname>
+        </autor>
+        <buchtitel>anime moan</buchtitel>
+        <verlag>peter xxx</verlag>
+        <isbn>1233403984</isbn>
+        <jahr>2345</jahr>
+        <ort>griechnland</ort>
+        <hersteller>peter xxx</hersteller>
+        <auflage>69</auflage>
+        <lieferung status="Lagernd"/>
+      </buch>
+      <buch>
+        <autor>
+          <vorname>peter</vorname>
+          <nachname>xxx</nachname>
+        </autor>
+        <buchtitel>anime moan</buchtitel>
+        <verlag>peter xxx</verlag>
+        <isbn>6969696969696</isbn>
+        <jahr>2345</jahr>
+        <ort>griechnland</ort>
+        <hersteller>peter xxx</hersteller>
+        <auflage>69</auflage>
+        <lieferung status="Lagernd"/>
+      </buch>
+      <buch>
+        <autor>
+          <vorname>Schlossberg</vorname>
+          <nachname/>
+        </autor>
+        <buchtitel>Susberg</buchtitel>
+        <verlag>Haihai</verlag>
+        <isbn>123123</isbn>
+        <jahr>2453</jahr>
+        <ort>Hainburg</ort>
+        <hersteller>vsh</hersteller>
+        <auflage>23</auflage>
+        <lieferung status="nicht Lagernd"/>
+      </buch>
+      <buch>
+        <autor>
+          <vorname>Schlossberg</vorname>
+          <nachname/>
+        </autor>
+        <buchtitel>Susberg</buchtitel>
+        <verlag>Haihai</verlag>
+        <isbn>123123</isbn>
+        <jahr>2453</jahr>
+        <ort>Hainburg</ort>
+        <hersteller>vsh</hersteller>
+        <auflage>23</auflage>
+        <lieferung status="nicht Lagernd"/>
+      </buch>
     </belletristik>
     <kochen>
       <angestellter status="vollzeit">
@@ -269,6 +367,17 @@
         <hersteller>grr</hersteller>
         <auflage>3</auflage>
         <lieferung status="lagernd"/>
+      </buch>
+      <buch>
+        <autor/>
+        <buchtitel/>
+        <verlag/>
+        <isbn/>
+        <jahr/>
+        <ort/>
+        <hersteller/>
+        <auflage/>
+        <lieferung/>
       </buch>
     </kochen>
     <sprachen>
@@ -439,6 +548,104 @@
         <hersteller>Kas</hersteller>
         <auflage>21</auflage>
         <lieferung status="lagernd"/>
+      </buch>
+      <buch>
+        <autor>
+          <vorname>adsd</vorname>
+          <nachname/>
+        </autor>
+        <buchtitel>asdasd</buchtitel>
+        <verlag>asdasd</verlag>
+        <isbn>123</isbn>
+        <jahr>2124</jahr>
+        <ort>sdafsdh</ort>
+        <hersteller>adsfas</hersteller>
+        <auflage>33</auflage>
+        <lieferung status="nicht Lagernd"/>
+      </buch>
+      <buch>
+        <autor>
+          <vorname>asdasd</vorname>
+          <nachname/>
+        </autor>
+        <buchtitel>ADASD</buchtitel>
+        <verlag>ASDASD</verlag>
+        <isbn>123</isbn>
+        <jahr>245</jahr>
+        <ort>dsflkfaö</ort>
+        <hersteller>JHHFie</hersteller>
+        <auflage>4</auflage>
+        <lieferung status="Bestellt"/>
+      </buch>
+      <buch>
+        <autor>
+          <vorname>HGKDSAHKSAG</vorname>
+          <nachname/>
+        </autor>
+        <buchtitel>jkadhkjash</buchtitel>
+        <verlag>hdajhdakjd</verlag>
+        <isbn>56789</isbn>
+        <jahr>273</jahr>
+        <ort>sfdiadhf</ort>
+        <hersteller>HHH</hersteller>
+        <auflage>7</auflage>
+        <lieferung status="Bestellt"/>
+      </buch>
+      <buch>
+        <autor>
+          <vorname>basod</vorname>
+          <nachname/>
+        </autor>
+        <buchtitel>basod</buchtitel>
+        <verlag>basod</verlag>
+        <isbn>4567</isbn>
+        <jahr>253</jahr>
+        <ort>basod</ort>
+        <hersteller>basod</hersteller>
+        <auflage>78</auflage>
+        <lieferung status="Bestellt"/>
+      </buch>
+      <buch>
+        <autor>
+          <vorname>basod</vorname>
+          <nachname/>
+        </autor>
+        <buchtitel>basod</buchtitel>
+        <verlag>basod</verlag>
+        <isbn>567</isbn>
+        <jahr>45</jahr>
+        <ort>basod</ort>
+        <hersteller>basod</hersteller>
+        <auflage>66</auflage>
+        <lieferung status="Bestellt"/>
+      </buch>
+      <buch>
+        <autor>
+          <vorname>buchdaten</vorname>
+          <nachname/>
+        </autor>
+        <buchtitel>buchdaten</buchtitel>
+        <verlag>buchdaten</verlag>
+        <isbn>66</isbn>
+        <jahr>556</jahr>
+        <ort>buchdaten</ort>
+        <hersteller>buchdaten</hersteller>
+        <auflage>88</auflage>
+        <lieferung status="nicht Lagernd"/>
+      </buch>
+      <buch>
+        <autor>
+          <vorname>buchdaten</vorname>
+          <nachname/>
+        </autor>
+        <buchtitel>buchdaten</buchtitel>
+        <verlag>buchdaten</verlag>
+        <isbn>7</isbn>
+        <jahr>776</jahr>
+        <ort>buchdaten</ort>
+        <hersteller>buchdaten</hersteller>
+        <auflage>67</auflage>
+        <lieferung status="Bestellt"/>
       </buch>
     </edv>
     <medizin>
