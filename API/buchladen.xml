@@ -647,6 +647,20 @@
         <auflage>67</auflage>
         <lieferung status="Bestellt"/>
       </buch>
+      <buch>
+        <autor>
+          <vorname>Peppy</vorname>
+          <nachname/>
+        </autor>
+        <buchtitel>osssss</buchtitel>
+        <verlag>ppy</verlag>
+        <isbn>727</isbn>
+        <jahr>727</jahr>
+        <ort>japan</ort>
+        <hersteller>ppy</hersteller>
+        <auflage>727</auflage>
+        <lieferung status="Lagernd"/>
+      </buch>
     </edv>
     <medizin>
       <angestellter status="vollzeit">
